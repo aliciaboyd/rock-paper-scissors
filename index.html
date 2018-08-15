@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Rock, Paper, Scissors!</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <h1>Rock, Paper, Scissors</h1>
+    <div class="links">
+      <a href="https://github.com/aliciaboyd/rock-paper-scissors">Github</a>
+      <a href="https://twitter.com/codenamealicia/">Twitter</a>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="score">
+    <p id="player-score">YOU: <span id="playScore">0</span></p>
+    <p id="computer-score">CPU: <span id="comScore"span>0</span></p>
+    <p id="result">Let's Play!</p>
+  </div>
+  <div class="game">
+    <p id="gameHeading">First to 5 wins.</p>
+    <img id="playerPlay" src="img/player-rock.png">
+    <img id="computerPlay" src="img/com-rock.png">
+
+    <div class="choices">
+      <a href="javascript:void(0);"><img id="rock-choice" height="90px" src="img/choice-rock.png"></a>
+      <a href="javascript:void(0);"><img id="paper-choice" height="90px" src="img/choice-paper.png"></a>
+      <a href="javascript:void(0);"> <img id="scissors-choice" height="90px" src="img/choice-scissors.png"></a>
+    </div>
+  </div>
+
+  <button id="restart">Restart</button>
+  
+</div>
+<script src="script.js"></script>
+</body>
+</html>

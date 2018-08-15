@@ -1,0 +1,178 @@
+/* Colors:
+ purple: #3423A6
+ yellow: #EEC643
+ dark-blue: #011638
+ grey: #F4F5F6
+*/
+
+body {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+/***     TOP STYLING     ***/
+
+header {
+  background-color: #011638;
+  color: white;
+  height: 50px;
+  position: relative;
+}
+
+header h1 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding: 10px;
+  font-size: 16px;
+  float: left;
+  letter-spacing: 1.5px;
+
+}
+
+header .links a{
+  color: white;
+  text-decoration: none;
+  float: right;
+  right: 60px;
+  letter-spacing: 2px;
+  margin: 5px 0 0 10px;
+  padding: 10px;
+  font-size: .9em;
+}
+
+header::after {
+  clear: both;
+}
+
+
+
+
+/***     SCORE STYLING     ***/
+
+#player-score { background-color: #EEC643; }
+
+#computer-score { background-color: #3423A6; }
+
+#player-score, #computer-score {
+  font-size: .8em;
+  width: 5em;
+  padding: 8px;
+  color: white;
+  display: inline-block;
+  border-radius: .5em;
+}
+
+#player-score span, #computer-score span {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-left: 3px;
+}
+
+.score {
+  text-align: center;
+  margin: 1em auto 0.5em;
+  width: 90%;
+}
+
+#result {
+  font-weight: 700;
+  margin: 0;
+}
+
+/***     GAME STYLING     ***/
+
+.game {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 2px 5px 20px rgba(0,0,0,.1);
+  height: 400px;
+  text-align: center;
+}
+
+#gameHeading {
+  font-weight: 700;
+  padding-top: 1.2em;
+}
+
+
+.choices {
+  display: block;
+  cursor: pointer;
+
+}
+
+.choices img {
+  margin-left: 20px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #F4F5F6;
+}
+
+.choices img:hover {
+  border: 2px solid #EEC643;
+}
+
+
+/***     RESTART BUTTON     ***/
+button {
+  width: 150px;
+  height: 35px;
+  display: block;
+  margin: auto;
+  margin-top: 1.25em;
+  font-size: .9em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #011638;
+  color: white;
+  border-radius: .5em;
+  cursor: pointer;
+}
+
+/***     MEDIA QUERIES     ***/
+
+@media (max-width: 499px) {
+  .container {
+    width: 99%;
+  }
+
+  #computerPlay, #playerPlay {
+    max-width: 140px;
+    margin: 20px 0;
+  }
+
+  .choices img{
+    margin: 30px 2px;
+  }
+}
+
+@media (max-width: 440px) {
+  header {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: .5em;
+  }
+
+  header h1 {
+    float: none;
+  }
+
+  header .links a {
+    float: none;
+
+  }
+}
